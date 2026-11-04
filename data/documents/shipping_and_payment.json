@@ -1,0 +1,14 @@
+[
+  {
+    "id": "policy_shipping_001",
+    "title": "Shipping Methods and Delivery Times",
+    "text": "We offer standard and expedited shipping. Standard shipping takes 5-7 business days and is free on all domestic orders over $50. Expedited shipping delivers in 2-3 business days for an additional fee of $15. International shipping is available to over 50 countries worldwide via DHL, FedEx, and UPS with delivery times ranging between 7-14 business days.",
+    "source": "shipping_policy.pdf"
+  },
+  {
+    "id": "policy_payment_002",
+    "title": "Accepted Payment Methods and Security",
+    "text": "We accept major credit cards including Visa, MasterCard, American Express, as well as PayPal, Apple Pay, and Google Pay. All transactions are protected by 256-bit SSL encryption and comply with PCI-DSS Level 1 standards. We retry failed payments up to 3 times over 48 hours before cancellation.",
+    "source": "payment_options.pdf"
+  }
+]

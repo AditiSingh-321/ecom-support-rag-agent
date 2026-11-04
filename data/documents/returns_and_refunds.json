@@ -1,0 +1,14 @@
+[
+  {
+    "id": "policy_returns_001",
+    "title": "Return and Exchange Policy",
+    "text": "Customers can return items within 30 days of purchase for a full refund or exchange. Items must be unopened, unworn, and in their original packaging with all tags attached. Electronics must be returned in the original sealed box within 14 to 30 days depending on the specific model. Returns can be initiated through our returns portal or by contacting customer support. Return shipping is free for damaged or defective items.",
+    "source": "returns_policy.pdf"
+  },
+  {
+    "id": "policy_refunds_002",
+    "title": "Refund Processing Policy",
+    "text": "Once your returned item is received and inspected at our fulfillment center, refunds will be processed within 5 to 10 business days. Refunds are issued to the original method of payment. Credit card processing times may take an additional 2 to 5 business days depending on your banking institution. If you experience payment failures or billing issues, retry within 24 hours or fill out our payment support form.",
+    "source": "refund_policy.pdf"
+  }
+]

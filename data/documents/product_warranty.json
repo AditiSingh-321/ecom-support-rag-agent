@@ -1,0 +1,20 @@
+[
+  {
+    "id": "prod_warranty_001",
+    "title": "Laptop Pro Warranty & Specifications",
+    "text": "Laptop Pro comes with a 2-year manufacturer warranty plus 1 year of accidental damage protection. It features a 15.6-inch 4K OLED display, 32GB RAM, 1TB NVMe SSD, and Intel Core i7 processor. Technical support is available 24/7.",
+    "source": "laptop_warranty.pdf"
+  },
+  {
+    "id": "prod_warranty_002",
+    "title": "Galaxy S21 Warranty & Specifications",
+    "text": "The Samsung Galaxy S21 comes with a 1-year standard manufacturer warranty covering defects in materials and hardware. Warranty does not cover accidental water damage or cracked screens without Samsung Care+.",
+    "source": "phone_warranty.pdf"
+  },
+  {
+    "id": "prod_warranty_003",
+    "title": "Fjallraven Backpack Specifications",
+    "text": "The Fjallraven Backpack is crafted from durable Vinylon F fabric that resists water and dirt. It features a spacious main compartment, zippered front pocket, and two open side pockets. Capacity is 16 liters. Standard 2-year limited warranty against material and craftsmanship defects.",
+    "source": "backpack_specs.pdf"
+  }
+]

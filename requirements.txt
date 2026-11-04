@@ -1,0 +1,36 @@
+# ========================================================
+# Ecommerce Support Agentic RAG - Python Dependencies
+# ========================================================
+
+# --- Core Utilities & Environment ---
+python-dotenv>=1.0.0,<2.0.0
+requests>=2.31.0,<3.0.0
+tenacity>=8.2.0,<9.0.0
+pyyaml>=6.0,<7.0
+tqdm>=4.66.0,<5.0.0
+python-dateutil>=2.8.2
+
+# --- Flask REST API ---
+flask>=2.2.2,<3.1.0
+flask-cors>=4.0.0
+flask-jwt-extended>=4.4.4
+redis>=4.5.4
+
+# --- Database & Persistence ---
+sqlalchemy>=1.4.46
+psycopg2-binary>=2.9.9
+
+# --- Streamlit Frontend ---
+streamlit>=1.32.0,<2.0.0
+
+# --- LLM, RAG & Vector Store ---
+openai>=1.12.0,<2.0.0
+langchain>=0.1.20
+langchain-core>=0.1.30
+langchain-community>=0.0.20
+langchain-openai>=0.1.0
+langchain-text-splitters>=0.0.1
+rank-bm25>=0.2.2
+numpy>=1.22.0
+pypdf>=3.9.0
+pinecone>=3.0.0
