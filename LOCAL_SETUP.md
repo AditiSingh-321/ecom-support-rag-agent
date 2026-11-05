@@ -17,7 +17,7 @@ This guide provides step-by-step instructions to configure, run, and test the ap
 
 ### Step 1: Open PowerShell and Navigate to Workspace
 ```powershell
-cd c:\Users\rahul\Downloads\Ecommerce-Support-Agentic-RAG-main\Ecommerce-Support-Agentic-RAG-main
+cd <path-to-repository>
 ```
 
 ### Step 2: Create and Activate Virtual Environment
@@ -71,7 +71,7 @@ python api/app/__init__.py
 ### Step 8: Start the Streamlit Frontend
 In PowerShell Terminal 2:
 ```powershell
-cd c:\Users\rahul\Downloads\Ecommerce-Support-Agentic-RAG-main\Ecommerce-Support-Agentic-RAG-main
+cd <path-to-repository>
 .\venv\Scripts\Activate.ps1
 streamlit run frontend/streamlit_app.py
 ```

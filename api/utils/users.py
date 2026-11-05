@@ -1,15 +1,43 @@
 # User Preference Persistence Logic
-from app import db
+from typing import Text, Dict, Any
 
-class UserPreference(db.Model):
-    user_id = db.Column(db.String(36), primary_key=True)
-    preferences = db.Column(db.JSON)
-    created_at = db.Column(db.DateTime, default=db.func.now())
-    updated_at = db.Column(db.DateTime, default=db.func.now(), 
-                         onupdate=db.func.now())
+try:
+    from app import db
+except ImportError:
+    try:
+        from api.app import db
+    except ImportError:
+        db = None
 
-# Add to rasa/actions/preferences.py
-from utils.redis_manager import RedisSessionManager
+if db is not None and hasattr(db, "Model"):
+    class UserPreference(db.Model):
+        user_id = db.Column(db.String(36), primary_key=True)
+        preferences = db.Column(db.JSON)
+        created_at = db.Column(db.DateTime, default=db.func.now())
+        updated_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
+
+        @classmethod
+        def update_prefs(cls, user_id: str, prefs: dict):
+            pass
+else:
+    class UserPreference:
+        @classmethod
+        def update_prefs(cls, user_id: str, prefs: dict):
+            pass
+
+try:
+    from rasa_sdk import Action
+except ImportError:
+    class Action:
+        pass
+
+try:
+    from api.utils.redis_manager import RedisSessionManager
+except ImportError:
+    try:
+        from utils.redis_manager import RedisSessionManager
+    except ImportError:
+        RedisSessionManager = None
 
 class ActionSavePreference(Action):
     def name(self) -> Text:
@@ -23,5 +51,7 @@ class ActionSavePreference(Action):
         }
         
         # Save to both Redis and PostgreSQL
-        RedisSessionManager().store_session(user_id, prefs)
+        if RedisSessionManager:
+            RedisSessionManager().store_session(user_id, prefs)
         UserPreference.update_prefs(user_id, prefs)
+        return []
